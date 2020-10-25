@@ -447,7 +447,7 @@ for k in range(10):
     #exec(f'E{k}.bind("<Enter>", lambda e : showTooltip("Csak egész számok és ponttal elválasztott tizedestörtek elfogadottak!", root, 500, 200))')
     #exec(f'E{k}.bind("<Leave>", lambda e : hideTooltip())')
     exec(f'E{k}.configure(font=entryFont)')
-    exec(f'E{k}.insert(0, "2")')
+    #exec(f'E{k}.insert(0, "2")')
     exec(f'E{k}.grid(row = k, column=3, padx=20)')
     exec(f'E{k}.config(validate="key", validatecommand=(reg, "%P"))')
 E0.grid(pady=(20,0))
